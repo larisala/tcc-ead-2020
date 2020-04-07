@@ -28,7 +28,7 @@ def setup(app):
     app.add_autoversioned_javascript("dragndrop.js")
     app.add_autoversioned_javascript("timeddnd.js")
     app.add_autoversioned_stylesheet("dragndrop.css")
-    add_i18n_js(app, {"en","sr-Cyrl"}, "dragndrop-i18n")
+    add_i18n_js(app, {"en","sr-Cyrl","pt-br"}, "dragndrop-i18n")
 
     app.add_node(DragNDropNode, html=(visit_dnd_node, depart_dnd_node))
 
@@ -117,7 +117,7 @@ class DragNDrop(RunestoneIdDirective):
 
     The question goes here.
 
-config values (conf.py): 
+config values (conf.py):
 
 - dragndrop_div_class - custom CSS class of the component's outermost div
     """
