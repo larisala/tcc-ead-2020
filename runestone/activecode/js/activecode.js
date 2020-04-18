@@ -962,7 +962,7 @@ ActiveCode.prototype.toggleEditorVisibility = function() {};
 
 ActiveCode.prototype.addErrorMessage = function(err) {
     // Add the error message
-    var errHead = $("<h3>").html("Error");
+    var errHead = $("<h3>").html($.i18n("msg_activecode_error"));
     this.eContainer = this.outerDiv.appendChild(document.createElement("div"));
     this.eContainer.className = "error alert alert-danger";
     this.eContainer.id = this.divid + "_errinfo";
@@ -993,10 +993,10 @@ ActiveCode.prototype.addErrorMessage = function(err) {
     var to = errString.indexOf(":");
     var errName = errString.substring(0, to);
     errText.innerHTML = errString;
-    $(this.eContainer).append("<h3>Description</h3>");
+    $(this.eContainer).append("<h3>" + $.i18n("msg_activecode_error_description") + "</h3>");
     var errDesc = this.eContainer.appendChild(document.createElement("p"));
     errDesc.innerHTML = errorText[errName];
-    $(this.eContainer).append("<h3>To Fix</h3>");
+    $(this.eContainer).append("<h3>" + $.i18n("msg_activecode_error_fix") + "</h3>");
     var errFix = this.eContainer.appendChild(document.createElement("p"));
     errFix.innerHTML = errorText[errName + "Fix"];
     var moreInfo = "../ErrorHelp/" + errName.toLowerCase() + ".html";

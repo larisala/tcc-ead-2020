@@ -11,6 +11,9 @@ $.i18n().load({
       "msg_activecode_show_codelens": "Mostrar CodeLens",
       "msg_activecode_show_in_codelens": "Mostrar em CodeLens",
       "msg_activecode_hide_codelens": "Ocultar Codelens",
+      "msg_activecode_error_description": "Descrição",
+      "msg_activecode_error_fix": "Como Resolver",
+      "msg_activecode_error": "Erro",
 
       "msg_activecode_parse_error": "Um erro de Parse significa que Python não entende a sintaxe da linha que a mensagem de erro aponta. Exemplos comuns são esquecer vírgulas entre argumentos ou esquecer ':' em um comando for.",
       "msg_activecode_parse_error_fix": "Para corrigir um erro de Parse, você só precisa analisar a linha com o erro e possivelmente a linha antes dela. Certifique-se de que estão de acordo com todas as regras de sintaxe de Python.",
