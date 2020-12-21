@@ -1,5 +1,5 @@
 $.i18n().load({
-  "en": {
+  "pt-br": {
       "msg_parson_check_me": "Verificar",
       "msg_parson_reset": "Resetar",
       "msg_parson_help":"Ajuda",

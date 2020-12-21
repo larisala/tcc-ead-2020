@@ -1,5 +1,5 @@
 $.i18n().load({
-  "en": {
+  "pt-br": {
       "msg_activecode_load_history": "Carregar histórico",
       "msg_activecode_audio_tour": "Tour de áudio",
       "msg_activecode_loaded_code": "Código salvo carregado.",
